@@ -1,0 +1,8 @@
+.header__container {
+  background-color: cyan;
+  width: screen;
+  display: flex;
+  justify-content: space-between;
+}
+.header__item {
+}
