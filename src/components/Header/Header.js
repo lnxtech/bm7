@@ -8,15 +8,15 @@ import ProfileIcon from "../../assets/static/profile-icon.png";
 
 const Header = () => {
   return (
-    <header className="header__container">
-      <figure className="header__item">
-        <img className="menu__icon" src={MenuIcon} alt="menu" />
+    <header className="nav__container">
+      <figure className="nav__img-container">
+        <img className="img_nav-1" src={MenuIcon} alt="menu" />
       </figure>
-      <figure className="header__item">
-        <img className="bm7__icon" src={Bm7Icon} alt="bm7-icon" />
+      <figure className="nav__img-container">
+        <img className="img_nav-2" src={Bm7Icon} alt="bm7-icon" />
       </figure>
-      <figure className="header__item">
-        <img className="profile__icon" src={ProfileIcon} alt="profile" />
+      <figure className="nav__img-container">
+        <img className="img_nav-3" src={ProfileIcon} alt="profile" />
       </figure>
     </header>
   );

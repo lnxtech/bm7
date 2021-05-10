@@ -1,8 +1,17 @@
-import logo from "./logo.svg";
+import React from "react";
 import Header from "./components/Header/Header.js";
+import Main from "./components/Main/Main.js";
 
-function App() {
-  return <Header />;
-}
+// styles
+import "./App.css";
+
+const App = () => {
+  return (
+    <div className="principal__container">
+      <Header />
+      <Main />
+    </div>
+  );
+};
 
 export default App;
