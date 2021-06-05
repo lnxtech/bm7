@@ -1,0 +1,49 @@
+.main {
+  margin: 0 1.5rem;
+}
+
+.selectors__container {
+  margin: 2rem;
+  display: flex;
+  list-style: none;
+  gap: 3rem;
+  align-content: center;
+  justify-content: center;
+}
+
+.main__text-container {
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: xx-small;
+  margin-bottom: 1.3rem;
+}
+
+.main__text2-container {
+  color: whitesmoke;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 1rem 0;
+}
+
+.img__container {
+}
+
+.image-1 {
+  width: 18rem;
+  border-bottom: solid 0.3rem white;
+}
+
+.main__button-container {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+.main__button-container button {
+  margin: 10px 0;
+  font-size: 20px;
+  color: white;
+  width: 10rem;
+  height: 2rem;
+  background-color: transparent;
+  border: solid 4px white;
+  border-radius: 100px;
+}
