@@ -1,15 +1,51 @@
-import React from 'react'
-import Menu from './Menu'
+import React, { useState } from 'react'
+import MenuIcon from '../../assets/static/menu-icon.png'
 import '../../assets/styles/Header.css'
 
 // assets
 import Bm7Icon from '../../assets/static/bm7-icon.png'
 import ProfileIcon from '../../assets/static/profile-icon.png'
-
+import X from '../../assets/static/main-selector.png'
 const Header = () => {
+  const [mostrar, setShow] = useState(false)
+
   return (
     <header className='nav__container'>
-      <Menu />
+      <figure className='nav__img-container'>
+        <img className='img_nav-1' src={MenuIcon} alt='menu' onClick={() => { setShow(!mostrar) }} />
+      </figure>
+      {mostrar
+        ? <div className='menu__container'>
+          <div className='menu__container--nav'>
+            <img className='img_menu' src={X} />
+            <img className='img_menu' src={Bm7Icon} />
+            <img className='img_menu' src={ProfileIcon} />
+          </div>
+          <div className='menu__container--nav2'>
+            <ul>
+              <li>
+                Menú
+              </li>
+              <li>
+                Conocenos
+              </li>
+              <li>
+                Soluciones
+              </li>
+              <li>
+                Blog
+              </li>
+              <li>
+                Contactanos
+              </li>
+            </ul>
+            <div>
+            <a href='#'>FB</a>
+            <a href='#'>LK</a>
+          </div>
+          </div>
+        </div>
+        : ''}
       <figure className='nav__img-container'>
         <img className='img_nav-2' src={Bm7Icon} alt='bm7-icon' />
       </figure>
