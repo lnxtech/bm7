@@ -5,7 +5,6 @@ import '../../assets/styles/Header.css'
 // assets
 import Bm7Icon from '../../assets/static/bm7-icon.png'
 import ProfileIcon from '../../assets/static/profile-icon.png'
-import X from '../../assets/static/main-selector.png'
 const Header = () => {
   const [mostrar, setShow] = useState(false)
 
@@ -17,7 +16,7 @@ const Header = () => {
       {mostrar
         ? <div className='menu__container'>
           <div className='menu__container--nav'>
-            <img className='img_menu' src={X} />
+            <figure onClick={() => {setShow(!mostrar)}}>X</figure>
             <img className='img_menu' src={Bm7Icon} />
             <img className='img_menu' src={ProfileIcon} />
           </div>
@@ -39,7 +38,7 @@ const Header = () => {
                 Contactanos
               </li>
             </ul>
-            <div>
+            <div className='menu__container--nav3'>
             <a href='#'>FB</a>
             <a href='#'>LK</a>
           </div>
