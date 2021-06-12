@@ -16,9 +16,12 @@ const Header = () => {
       {mostrar
         ? <div className='menu__container'>
           <div className='menu__container--nav'>
-            <figure onClick={() => {setShow(!mostrar)}}>X</figure>
+            <figure onClick={() => { setShow(!mostrar) }}>X</figure>
             <img className='img_menu' src={Bm7Icon} />
             <img className='img_menu' src={ProfileIcon} />
+          </div>
+          <div className='menu__a'>
+            <a>Calcule las probabilidades de sufrir un accidente laboral</a>
           </div>
           <div className='menu__container--nav2'>
             <ul>
@@ -39,11 +42,11 @@ const Header = () => {
               </li>
             </ul>
             <div className='menu__container--nav3'>
-            <a href='#'>FB</a>
-            <a href='#'>LK</a>
+              <a href='#'>FB</a>
+              <a href='#'>LK</a>
+            </div>
           </div>
           </div>
-        </div>
         : ''}
       <figure className='nav__img-container'>
         <img className='img_nav-2' src={Bm7Icon} alt='bm7-icon' />
