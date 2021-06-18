@@ -1,5 +1,4 @@
 .menu__container {
-  position: absolute;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -30,6 +29,10 @@
   justify-content: space-between;
   align-items: center;
   margin: 0px 10px;
+}
+
+.nav__img-containerBlack {
+  background-color: black;
 }
 .menu__container--nav2 {
   margin: auto;

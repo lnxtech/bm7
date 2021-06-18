@@ -5,7 +5,6 @@ import Main from "../../components/Main/Main.js";
 const Home = () => {
   return (
     <div>
-      <Header />
       <Main />
     </div>
   );

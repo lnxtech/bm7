@@ -13,7 +13,7 @@ const Header = () => {
     setTheme(!theme);
   };
   return (
-    <header className="nav__container">
+    <header className={theme ? "nav__containerBlack" : "nav__container"}>
       <Link
         onClick={handleMenu}
         to={theme ? "/Home" : "/Menu"}

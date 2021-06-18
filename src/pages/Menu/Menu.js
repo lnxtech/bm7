@@ -1,12 +1,9 @@
 import React from "react";
 import "../../assets/styles/Menu.css";
 
-import Header from "../../components/Header/Header.js";
-
 const Menu = () => {
   return (
     <div className="menu__container">
-      <Header />
       <div className="menu__a">
         <p>Calcule las probabilidades de sufrir un accidente laboral</p>
       </div>
