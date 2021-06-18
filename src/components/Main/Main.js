@@ -11,26 +11,46 @@ import Arrow from "../../assets/static/main-arrow.png";
 import "../../assets/styles/Main.css";
 
 const Main = () => {
+  const moveToSection1 = () => {
+    handleChange(0);
+  };
+
+  const moveToSection2 = () => {
+    handleChange(350);
+  };
+
+  const moveToSection3 = () => {
+    handleChange(800);
+  };
+
+  const handleChange = (number) => {
+    document.getElementById("main__container").scrollTo(number, 0);
+  };
+
   return (
     <div className="main">
-      <ul className="selectors__container">
-        <li className="main__selector-container">
-          <a href="#section-1" className="main__selectors">
+      <div className="selectors__container">
+        <div className="main__selector-container">
+          <figure onClick={moveToSection1} className="main__selectors">
             <img src={Selector} alt="selector1" />
-          </a>
-        </li>
-        <li className="main__selector-container">
-          <a href="#section-2" className="main__selectors">
+          </figure>
+        </div>
+        <div className="main__selector-container">
+          <figure onClick={moveToSection2} className="main__selectors">
             <img src={Selector} alt="selector2" />
-          </a>
-        </li>
-        <li className="main__selector-container">
-          <a href="#section-3" className="main__selectors">
+          </figure>
+        </div>
+        <div className="main__selector-container">
+          <figure onClick={moveToSection3} className="main__selectors">
             <img src={Selector} alt="selector3" />
-          </a>
-        </li>
-      </ul>
-      <div className="main__container">
+          </figure>
+        </div>
+      </div>
+      <div
+        onChange={handleChange}
+        id="main__container"
+        className="main__container"
+      >
         <section id="section-1" className="section__container">
           <div class="main__item">
             <article className="main__text-container">
