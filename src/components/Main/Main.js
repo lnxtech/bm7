@@ -53,14 +53,17 @@ const Main = () => {
       >
         <section id="section-1" className="section__container">
           <div class="main__item">
-            <article className="main__text-container">
-              <h1>Ciencias del comportamiento e inteligencia artificial</h1>
-            </article>
-            <article className="main__text2-container">
-              <h2>
-                Deseamos ayudar a las organizaciones a prevenir los accidentes.
-              </h2>
-            </article>
+            <div className="main__allText-container">
+              <article className="main__text-container">
+                <h1>Ciencias del comportamiento e inteligencia artificial</h1>
+              </article>
+              <article className="main__text2-container">
+                <h2>
+                  Deseamos ayudar a las organizaciones a prevenir los
+                  accidentes.
+                </h2>
+              </article>
+            </div>
             <figure className="img__container">
               <img className="image-1" src={Img1} alt="image__main-1" />
             </figure>
@@ -71,15 +74,18 @@ const Main = () => {
         </section>
         <section id="section-2" className="section__container">
           <div class="main__item">
-            <article className="main__text-container2">
-              <h1>Pedictor de Accidentabilidad</h1>
-            </article>
-            <article className="main__text2-container2">
-              <h2>
-                Identificamos los factores que inciden en la accidentabilidad de
-                las personas con Inteligencia Artificial.
-              </h2>
-            </article>
+            <div>
+              <article className="main__text-container2">
+                <h1>Pedictor de Accidentabilidad</h1>
+              </article>
+              <article className="main__text2-container2">
+                <h2>
+                  Identificamos los factores que inciden en la accidentabilidad
+                  de las personas con Inteligencia Artificial.
+                </h2>
+              </article>
+            </div>
+
             <figure className="img__container">
               <img className="image-2" src={Img2} alt="image__main-2" />
             </figure>
@@ -90,12 +96,14 @@ const Main = () => {
         </section>
         <section id="section-3" className="section__container">
           <div class="main__item">
-            <article className="main__text-container3">
-              <h1>03 factores que influyen la accidentabilidad</h1>
-            </article>
-            <article className="main__text2-container3">
-              <h2>Aspectos Cognitivos, emocionales y de Contexto.</h2>
-            </article>
+            <div>
+              <article className="main__text-container3">
+                <h1>03 factores que influyen la accidentabilidad</h1>
+              </article>
+              <article className="main__text2-container3">
+                <h2>Aspectos Cognitivos, emocionales y de Contexto.</h2>
+              </article>
+            </div>
             <figure className="img__container">
               <img className="image-3" src={Img3} alt="image__main-1" />
             </figure>
