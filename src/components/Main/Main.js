@@ -64,12 +64,12 @@ const Main = () => {
                 </h2>
               </article>
             </div>
-            <figure className="img__container">
-              <img className="image-1" src={Img1} alt="image__main-1" />
-            </figure>
             <div className="main__button-container">
               <button>Leer más</button>
             </div>
+            <figure className="img__container">
+              <img className="image-1" src={Img1} alt="image__main-1" />
+            </figure>
           </div>
         </section>
         <section id="section-2" className="section__container">
@@ -103,13 +103,13 @@ const Main = () => {
               <article className="main__text2-container3">
                 <h2>Aspectos Cognitivos, emocionales y de Contexto.</h2>
               </article>
+              <div className="main__button-container">
+                <button>Leer más</button>
+              </div>
             </div>
             <figure className="img__container">
               <img className="image-3" src={Img3} alt="image__main-1" />
             </figure>
-            <div className="main__button-container">
-              <button>Leer más</button>
-            </div>
           </div>
         </section>
       </div>

@@ -141,28 +141,41 @@
   width: 2rem;
 }
 
+.main__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.main__item div:nth-child(2) {
+  order: 3;
+}
+
 @media (min-width: 768px) {
   .main__item {
+    background-color: chartreuse;
     display: grid;
     grid-template-columns: 50% 50%;
   }
+
+  .img__container {
+    background-color: brown;
+    grid-row: span 2;
+  }
   .image-1 {
-    margin-top: 2rem;
     padding-top: 0;
-    width: 24rem;
+    width: 22rem;
     border-bottom: solid 0.3rem white;
   }
   .image-2 {
-    margin-top: 4rem;
     padding-top: 0;
-    width: 26rem;
+    width: 27rem;
     border-bottom: solid 0.3rem white;
   }
 
   .image-3 {
-    margin-top: 4rem;
     padding-top: 0;
-    width: 24rem;
+    width: 23rem;
+    height: 23rem;
     border-bottom: solid 0.3rem white;
   }
 
